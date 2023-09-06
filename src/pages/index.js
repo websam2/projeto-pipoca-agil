@@ -1,18 +1,12 @@
-import Hero from "@/layout/Hero";
-import Header from "@/layout/Header";
 import { Inter } from "next/font/google";
-import Breadcrumbs from "@/layout/Breadcrumbs";
+import Home from "./Home";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function index() {
   return (
-    <main
-      className={`flex flex-col items-center w-screen h-full bg-purple ${inter.className}`}
-    >
-      <Header />
-      <Hero />
-      <Breadcrumbs />
+    <main>
+      <Home />
     </main>
   );
 }

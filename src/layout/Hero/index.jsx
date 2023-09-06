@@ -4,7 +4,7 @@ import Button1 from "@/components/Button1";
 
 export default function Hero() {
   return (
-    <div className="flex flex-row justify-center p-4 items-center max-w-7xl mt-24 relative">
+    <div className="flex flex-row bg-gradient-to-r from-purple to-orange justify-center p-4 items-center max-w-7xl mt-24 relative">
       <section className="flex flex-col w-1/2">
         <h1 className="text-2xl font-black">PROJETO PODCAST PIPOCA ÁGIL</h1>
         <p>
