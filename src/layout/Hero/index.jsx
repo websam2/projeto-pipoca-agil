@@ -4,7 +4,7 @@ import Button1 from "@/components/Button1";
 
 export default function Hero() {
   return (
-    <div className="flex flex-row bg-gradient-to-r from-purple via-purple2 via-60% to-purple justify-center items-center w-full overflow-hidden h-96 mt-16 relative">
+    <div className="flex flex-row bg-gradient-to-r from-purple via-purple2 via-60% to-purple justify-center items-center w-full overflow-hidden h-96 mt-24 relative">
       <section className="flex flex-col max-w-7xl gap-6">
         <h1 className="text-4xl font-semibold z-10">
           PROJETO PODCAST PIPOCA ÁGIL
