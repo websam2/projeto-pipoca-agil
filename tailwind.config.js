@@ -10,6 +10,7 @@ module.exports = {
     },
     colors: {
       purple: "#A34DD7",
+      purple2: "#C1A7BE",
       red: "#F71B0C",
       orange: "#FB7C0B",
       orange2: "#F94B09",
@@ -20,19 +21,19 @@ module.exports = {
       "gray-light": "#d3dce6",
       white: "#FFF",
     },
-    fontFamily: {
-      sans: ["Graphik", "sans-serif"],
-      serif: ["Merriweather", "serif"],
-    },
-    extend: {
-      spacing: {
-        128: "32rem",
-        144: "36rem",
-      },
-      borderRadius: {
-        "4xl": "2rem",
-      },
-    },
+    // fontFamily: {
+    //   sans: ["Graphik", "sans-serif"],
+    //   serif: ["Merriweather", "serif"],
+    // },
+    // extend: {
+    //   spacing: {
+    //     128: "32rem",
+    //     144: "36rem",
+    //   },
+    //   borderRadius: {
+    //     "4xl": "2rem",
+    //   },
+    // },
   },
   plugins: [require("daisyui")],
 };

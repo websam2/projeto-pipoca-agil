@@ -4,10 +4,12 @@ import Button1 from "@/components/Button1";
 
 export default function Hero() {
   return (
-    <div className="flex flex-row bg-gradient-to-r from-purple to-orange justify-center p-4 items-center max-w-7xl mt-24 relative">
-      <section className="flex flex-col w-1/2">
-        <h1 className="text-2xl font-black">PROJETO PODCAST PIPOCA ÁGIL</h1>
-        <p>
+    <div className="flex flex-row bg-gradient-to-r from-purple via-purple2 via-60% to-purple justify-center items-center w-full overflow-hidden h-96 mt-16 relative">
+      <section className="flex flex-col max-w-7xl gap-6">
+        <h1 className="text-4xl font-semibold z-10">
+          PROJETO PODCAST PIPOCA ÁGIL
+        </h1>
+        <p className="z-20 w-1/2">
           Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
           tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
           veniam, quis nostrum exercitationem ullam corporis suscipit
@@ -17,15 +19,13 @@ export default function Hero() {
         </p>
         <Button1 nameButton="Browse Podcasts" />
       </section>
-      <div className="w-1/2">
-        {/* <Image
-          className="object-contain w-full h-full"
-          width={1200}
-          height={0}
-          src={Banner}
-          alt="Fundo"
-        /> */}
-      </div>
+      <Image
+        className="absolute -right-52 -top-40  z-0"
+        width={900}
+        height={0}
+        src={Banner}
+        alt="Fundo"
+      />
     </div>
   );
 }
