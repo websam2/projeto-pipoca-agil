@@ -2,9 +2,9 @@ import CardFeedback from "@/components/CardFeedback";
 
 export default function Feedback() {
   return (
-    <section className="flex flex-col justify-center items-center">
+    <section className="flex flex-col justify-center items-center max-w-7xl gap-10 p-10">
       <h1 className="text-4xl m-4">Veja o que falaram sobre o podcast</h1>
-      <div className="carousel rounded-box">
+      <div className="carousel rounded-box ">
         <div className="carousel-item">
           <CardFeedback
             name="Tatiane"

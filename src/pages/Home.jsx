@@ -7,6 +7,7 @@ import DigitalPlatform from "@/layout/DigitalPlatform";
 import FAQ from "@/layout/FAQ";
 import Feedback from "@/layout/Feedback";
 import FormHome from "@/layout/FormHome";
+import Footer from "@/layout/Footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function Home() {
       <FAQ />
       <Feedback />
       <FormHome />
+      <Footer />
     </main>
   );
 }
