@@ -5,6 +5,8 @@ import Breadcrumbs from "@/layout/Breadcrumbs";
 import Youtube from "@/layout/Youtube";
 import DigitalPlatform from "@/layout/DigitalPlatform";
 import FAQ from "@/layout/FAQ";
+import Feedback from "@/layout/Feedback";
+import FormHome from "@/layout/FormHome";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -19,6 +21,8 @@ export default function Home() {
       <Youtube />
       <DigitalPlatform />
       <FAQ />
+      <Feedback />
+      <FormHome />
     </main>
   );
 }

@@ -1,6 +1,10 @@
+"use client";
+
 import React from "react";
-import Card from "@/components/Card";
+import CardYoutube from "@/components/CardYoutube";
 import videos from "@/json/canalIbson.json";
+import { IconButton, Input } from "@material-tailwind/react";
+import Search from "@/assets/icons/search.svg";
 
 export default function Youtube() {
   const [search, setSearch] = React.useState("");
@@ -21,13 +25,23 @@ export default function Youtube() {
         <h1 className="font-bold text-white text-3xl m-4">
           Ouça as nossas produções
         </h1>
-        <input
+        <div className="w-72">
+          <Input
+            type="search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            label="Buscar"
+            color="black"
+            icon={<i class={Search} />}
+          />
+        </div>
+        {/* <input
           className="input input-bordered w-72 m-4"
           type="search"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Buscar"
-        />
+        /> */}
       </section>
 
       <img
@@ -46,7 +60,7 @@ export default function Youtube() {
           ))} */}
 
         {videos.map((video) => (
-          <Card id={video.id} key={video.id} />
+          <CardYoutube id={video.id} key={video.id} />
         ))}
       </section>
     </div>

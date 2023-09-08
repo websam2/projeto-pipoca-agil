@@ -1,4 +1,4 @@
-export default function Card({ id }) {
+export default function CardYoutube({ id }) {
   return (
     <section>
       <a
