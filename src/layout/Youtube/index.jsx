@@ -5,6 +5,7 @@ import CardYoutube from "@/components/CardYoutube";
 import videos from "@/json/canalIbson.json";
 import { IconButton, Input } from "@material-tailwind/react";
 import Search from "@/assets/icons/search.svg";
+import Title from "@/components/Title3xl";
 
 export default function Youtube() {
   const [search, setSearch] = React.useState("");
@@ -22,16 +23,15 @@ export default function Youtube() {
   return (
     <div className="flex flex-col max-w-7xl justify-center items-center p-4">
       <section className="flex flex-row justify-between items-center w-full">
-        <h1 className="font-bold text-white text-3xl m-4">
-          Ouça as nossas produções
-        </h1>
+        <Title title="Ouça as nossas produções" />
         <div className="w-72">
           <Input
+            className="bg-deep-purple-50"
             type="search"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             label="Buscar"
-            color="black"
+            color="purple"
             icon={<i class={Search} />}
           />
         </div>

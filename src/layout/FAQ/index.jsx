@@ -1,12 +1,13 @@
 import Collapse from "@/components/Collapse";
 import Image from "next/image";
 import Microfone from "@/assets/images/Microfone.png";
+import Title from "@/components/Title4xl";
 
 export default function FAQ() {
   return (
     <section className="flex flex-col justify-center items-center w-full pt-10 pb-16 bg-yellow relative">
-      <h1 className="text-4xl m-6">PERGUNTAS FREQUENTES SOBRE O PODCAST</h1>
-      <div className="flex flex-col justify-center items-center max-w-7xl gap-6">
+      <Title title="PERGUNTAS FREQUENTES SOBRE O PODCAST" />
+      <div className="flex flex-col justify-center items-center max-w-7xl mt-6 gap-6">
         <Collapse title="Sobre o que é o podcast?" subTitle="Falta dados" />
         <Collapse
           title="Posso sugerir tópicos ou enviar perguntas para o podcast?"

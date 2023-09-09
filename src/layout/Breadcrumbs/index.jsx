@@ -1,4 +1,4 @@
-import Button2 from "@/components/Button2";
+import Button from "@/components/ButtonXL";
 import Image from "next/image";
 import Effect from "@/assets/icons/effect.svg";
 import Loudspeaker from "@/assets/icons/loudspeaker.svg";
@@ -7,7 +7,7 @@ export default function Breadcrumbs() {
   return (
     <main>
       <div className="flex flex-col items-center justify-center w-screen bg-yellow h-80 relative">
-        <div className="flex flex-row justify-between max-w-7xl">
+        <div className="flex flex-row justify-between max-w-7xl z-10">
           <section className="flex flex-row items-center">
             <Image
               className=""
@@ -20,24 +20,23 @@ export default function Breadcrumbs() {
               Conheça nosso clube de assinantes
             </h1>
           </section>
-          <Button2 nameButton="QUERO CONHECER" />
+          <Button nameButtonXL="QUERO CONHECER" />
         </div>
-        <div className="flex flex-row justify-between w-full absolute top-28">
-          <Image
-            className="m-8"
-            width={175}
-            height={175}
-            src={Loudspeaker}
-            alt="loudspeaker"
-          />
-          <Image
-            className="m-8 -scale-x-100"
-            width={175}
-            height={175}
-            src={Loudspeaker}
-            alt="loudspeaker"
-          />
-        </div>
+
+        <Image
+          className="bottom-0 left-0 absolute z-0"
+          width={175}
+          height={175}
+          src={Loudspeaker}
+          alt="loudspeaker"
+        />
+        <Image
+          className="bottom-0 right-0 -scale-x-100 absolute z-0"
+          width={175}
+          height={175}
+          src={Loudspeaker}
+          alt="loudspeaker"
+        />
       </div>
     </main>
   );

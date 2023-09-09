@@ -1,3 +1,4 @@
+import Title from "@/components/Title3xl";
 import {
   Card,
   Input,
@@ -10,12 +11,13 @@ export default function FormHome() {
   return (
     <div className="flex justify-center items-center w-full bg-yellow">
       <div className="flex flex-row justify-center items-center max-w-7xl ">
-        <section className="flex flex-col w-1/2">
-          <h1 className="text-3xl">
-            Venha fazer parte do clube de assinantes do pipoca ágil
-          </h1>
+        <section className="flex flex-col w-1/2 gap-4">
+          <Title
+            color="red"
+            title="Venha fazer parte do clube de assinantes do pipoca ágil"
+          />
           <p className="text-lg">
-            Para fazer parte , preencha o formulário ao lado{" "}
+            Para fazer parte , preencha o formulário ao lado.
           </p>
         </section>
         <section className="flex flex-col w-1/2">
@@ -55,6 +57,7 @@ export default function FormHome() {
                     Eu, aceito receber conteúdos do Pipoca ágil.
                   </Typography>
                 }
+                className="bg-purple"
                 containerProps={{ className: "-ml-2.5" }}
               />
               <Button className="bg-purple w-48 mt-6 mb-6" fullWidth>
