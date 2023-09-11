@@ -5,9 +5,9 @@ import Title from "@/components/Title4xl";
 
 export default function FAQ() {
   return (
-    <section className="flex flex-col justify-center items-center w-full pt-10 pb-16 bg-yellow relative">
-      <Title title="PERGUNTAS FREQUENTES SOBRE O PODCAST" />
-      <div className="flex flex-col justify-center items-center max-w-7xl mt-6 gap-6">
+    <section className="flex flex-col justify-center items-center w-full pt-20 pb-20 pb-16 bg-yellow relative">
+      <Title title="PERGUNTAS FREQUENTES SOBRE O " titlePurple="PODCAST" />
+      <div className="flex flex-col justify-center items-center max-w-7xl mt-10 gap-6">
         <Collapse title="Sobre o que é o podcast?" subTitle="Falta dados" />
         <Collapse
           title="Posso sugerir tópicos ou enviar perguntas para o podcast?"
@@ -23,15 +23,15 @@ export default function FAQ() {
         />
       </div>
       <Image
-        className="absolute top-0 right-4"
-        width={100}
+        className="w-[8%] absolute top-0 right-4"
+        width={0}
         height={0}
         src={Microfone}
         alt="microfone"
       />
       <Image
-        className="absolute bottom-0 left-4 -scale-y-100 -scale-x-100"
-        width={100}
+        className="w-[8%] absolute bottom-0 left-4 -scale-y-100 -scale-x-100"
+        width={0}
         height={0}
         src={Microfone}
         alt="microfone"

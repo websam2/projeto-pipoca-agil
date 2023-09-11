@@ -24,16 +24,16 @@ export default function Breadcrumbs() {
         </div>
 
         <Image
-          className="bottom-0 left-0 absolute z-0"
-          width={175}
-          height={175}
+          className="w-[10%] bottom-0 left-0 absolute z-0"
+          width={0}
+          height={0}
           src={Loudspeaker}
           alt="loudspeaker"
         />
         <Image
-          className="bottom-0 right-0 -scale-x-100 absolute z-0"
-          width={175}
-          height={175}
+          className="w-[10%] bottom-0 right-0 -scale-x-100 absolute z-0"
+          width={0}
+          height={0}
           src={Loudspeaker}
           alt="loudspeaker"
         />

@@ -3,8 +3,8 @@
 import React from "react";
 import CardYoutube from "@/components/CardYoutube";
 import videos from "@/json/canalIbson.json";
-import { IconButton, Input } from "@material-tailwind/react";
-import Search from "@/assets/icons/search.svg";
+import { Input, Button } from "@material-tailwind/react";
+import SearchIcon from "@/assets/icons/search.svg";
 import Title from "@/components/Title3xl";
 
 export default function Youtube() {
@@ -18,22 +18,35 @@ export default function Youtube() {
   //   { id: "wR15AkpsgCE", title: "Me paga um café" },
   // ]);
 
+  const [searchInput, setSearchInput] = React.useState("");
+  const onChange = ({ target }) => setSearchInput(target.value);
+
   const searchVideos = videos.filter((video) => video.id.includes(search));
 
   return (
-    <div className="flex flex-col max-w-7xl justify-center items-center p-4">
-      <section className="flex flex-row justify-between items-center w-full">
+    <div className="flex flex-col text-white max-w-7xl justify-center items-center pt-20 pb-20">
+      <section className="flex flex-row justify-between items-center w-full pb-10">
         <Title title="Ouça as nossas produções" />
-        <div className="w-72">
+        <div className="relative flex w-full max-w-[24rem]">
           <Input
-            className="bg-deep-purple-50"
             type="search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            label="Buscar"
-            color="purple"
-            icon={<i class={Search} />}
+            label="Buscar vídeos"
+            value={searchInput}
+            onChange={onChange}
+            className="pr-20 bg-gray-light"
+            color="black"
+            containerProps={{
+              className: "min-w-0",
+            }}
           />
+          <Button
+            size="sm"
+            color={searchInput ? "deep-orange" : "deep-purple"}
+            disabled={!searchInput}
+            className="!absolute right-1 top-1 rounded"
+          >
+            enviar
+          </Button>
         </div>
         {/* <input
           className="input input-bordered w-72 m-4"
