@@ -5,10 +5,11 @@ import LogoFacebook from "@/assets/icons/LogoFacebook.svg";
 import LogoInstagram from "@/assets/icons/LogoInstagram.svg";
 import LogoTwitter from "@/assets/icons/LogoTwitter.svg";
 import CardSocial from "@/components/CardSocial";
+import Chat from "@/layout/Chat";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col justify-center items-center bg-black w-full gap-4">
+    <div className="flex flex-col justify-center items-center bg-black w-full gap-4 relative">
       <section className="flex flex-row justify-center items-center mt-9">
         <h1 className="text-white text-lg">
           NOSSAS <span className="font-bold">REDES SOCIAIS</span>
@@ -40,6 +41,7 @@ export default function Footer() {
       <p className="text-white text-sm mt-9">
         © 2023 por Podcast Pipoca Ágil | Orgulhosamente criado por Ibson Cabral
       </p>
+      <Chat />
     </div>
   );
 }
