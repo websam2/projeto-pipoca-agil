@@ -11,12 +11,18 @@ export default function Footer() {
   return (
     <div className="flex flex-col justify-center items-center bg-black w-full gap-4 relative">
       <section className="flex flex-row justify-center items-center mt-9">
-        <h1 className="text-white text-lg">
+        <h1 className="text-white sm:text-lg">
           NOSSAS <span className="font-bold">REDES SOCIAIS</span>
         </h1>
-        <Image src={Logo} alt="Logo" width={100} height={100} />
+        <Image
+          className="w-16 sm:w-28"
+          src={Logo}
+          alt="Logo"
+          width={0}
+          height={0}
+        />
       </section>
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row w-full sm:max-w-7xl gap-4">
         <CardSocial
           title="NOSSO"
           subTitle="YOUTUBE"
@@ -38,7 +44,7 @@ export default function Footer() {
           LogoYoutube={LogoTwitter}
         />
       </div>
-      <p className="text-white text-sm mt-9">
+      <p className="text-center text-white text-xs sm:text-sm mt-9">
         © 2023 por Podcast Pipoca Ágil | Orgulhosamente criado por Ibson Cabral
       </p>
       <Chat />

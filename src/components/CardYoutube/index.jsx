@@ -7,7 +7,7 @@ export default function CardYoutube({ id }) {
         target="_blank"
       >
         <img
-          className="w-56 rounded-lg"
+          className="sm:w-56 rounded-lg"
           src={`https://img.youtube.com/vi/${id}/mqdefault.jpg`}
           alt="Capa"
         />

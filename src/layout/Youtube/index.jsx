@@ -25,9 +25,9 @@ export default function Youtube() {
 
   return (
     <div className="flex flex-col text-white max-w-7xl justify-center items-center pt-20 pb-20">
-      <section className="flex flex-row justify-between items-center w-full pb-10">
+      <section className="flex flex-col sm:flex-row justify-between items-center w-full pb-10">
         <Title title="Ouça as nossas produções" />
-        <div className="relative flex w-full max-w-[24rem]">
+        <div className="relative flex w-full p-4 max-w-[24rem]">
           <Input
             type="search"
             label="Buscar vídeos"
@@ -43,7 +43,7 @@ export default function Youtube() {
             size="sm"
             color={searchInput ? "deep-orange" : "deep-purple"}
             disabled={!searchInput}
-            className="!absolute right-1 top-1 rounded"
+            className="!absolute right-5 top-5 rounded"
           >
             enviar
           </Button>
@@ -58,7 +58,7 @@ export default function Youtube() {
       </section>
 
       <img
-        className="m-4 w-1/2 rounded-lg"
+        className="m-4 p-4 sm:w-1/2 rounded-lg"
         src="https://img.youtube.com/vi/LofPxJyicXE/maxresdefault.jpg"
         alt="cover"
       />

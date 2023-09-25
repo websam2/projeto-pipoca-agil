@@ -5,7 +5,7 @@ import Title from "@/components/Title4xl";
 
 export default function FAQ() {
   return (
-    <section className="flex flex-col justify-center items-center w-full pt-20 pb-16 bg-yellow relative">
+    <section className="flex flex-col justify-center items-center w-full p-4 pt-20 pb-16 bg-yellow relative">
       <Title title="PERGUNTAS FREQUENTES SOBRE O " titlePurple="PODCAST" />
       <div className="flex flex-col justify-center items-center max-w-7xl mt-10 gap-6">
         <Collapse title="Sobre o que é o podcast?" subTitle="Falta dados" />

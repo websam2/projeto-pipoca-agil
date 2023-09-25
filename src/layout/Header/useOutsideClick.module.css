@@ -1,8 +1,8 @@
-.menu.active {
+.menuHamburger.active {
   opacity: 1;
   visibility: visible;
 }
 
-.menu {
+.menuHamburger.inactive {
   opacity: 0;
 }

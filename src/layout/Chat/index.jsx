@@ -10,7 +10,13 @@ export default function Chat() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image width={100} height={100} src={whatsapp} alt="whatsapp" />
+        <Image
+          className="w-16 sm:w-28"
+          width={0}
+          height={0}
+          src={whatsapp}
+          alt="whatsapp"
+        />
       </a>
     </>
   );
